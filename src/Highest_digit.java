@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class highest_digit {
+public class Highest_digit {
 
     public static void main(String[] args) {
         num();
