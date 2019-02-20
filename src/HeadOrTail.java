@@ -7,7 +7,7 @@ public class HeadOrTail {
         int tail = 0;
         boolean bool;
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter number of attempts:");
+        System.out.println("Enter number1 of attempts:");
         int n = input.nextInt();
         for (int i = 0; i < n; i++) {
             bool = (Math.random() < 0.5);
