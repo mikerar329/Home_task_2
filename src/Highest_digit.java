@@ -3,10 +3,7 @@ import java.util.Scanner;
 public class Highest_digit {
 
     public static void main(String[] args) {
-        num();
-    }
 
-    public static int num() {
         try {
             Scanner scan = new Scanner(System.in);
             int num = scan.nextInt();
@@ -21,9 +18,9 @@ public class Highest_digit {
             System.out.print("Max digit is " + maxNum);
         } catch (Exception ex) {
             System.out.println("Error");
-            return -1;
+
         }
-        return 0;
+
     }
 }
 
