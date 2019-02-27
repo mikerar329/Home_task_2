@@ -12,14 +12,6 @@ public class Nok_Nod_1 {
             i++;
         }
         System.out.println("NOK " + i);
-
-        while (number1 != 0 && number2 != 0) {
-            if (number1 > number2) {
-                number1 %= number2;
-            } else {
-                number2 %= number1;
-            }
-        }
-        System.out.println("NOD is " + (number1 + number2));
+        System.out.println("NOD is " + (number1 * number2)/i);
     }
 }
