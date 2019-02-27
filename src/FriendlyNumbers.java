@@ -7,6 +7,7 @@ public class FriendlyNumbers {
         System.out.println("Enter range of numbers");
         int a = scan.nextInt();
         int b = scan.nextInt();
+        long startTime = System.currentTimeMillis();
         int sum = 0;
         int sum1 = 0;
         int temp = 0;
@@ -34,6 +35,8 @@ public class FriendlyNumbers {
             temp = 0;
 
         }
+        long timeSpent = System.currentTimeMillis() - startTime;
+        System.out.println("программа выполнялась " + timeSpent + " миллисекунд");
 
     }
 

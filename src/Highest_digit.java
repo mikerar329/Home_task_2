@@ -9,9 +9,8 @@ public class Highest_digit {
             int num = scan.nextInt();
             int maxNum = 0;
             while (num != 0) {
-                int tmp = num % 10;
-                if (maxNum < tmp) {
-                    maxNum = tmp;
+                if (maxNum < num % 10) {
+                    maxNum = num % 10;
                 }
                 num /= 10;
             }
