@@ -8,7 +8,7 @@ public class Nok_Nod {
         int number2 = sc.nextInt();
 
         int i = (number1 < number2 ? number1 : number2);
-        while (!(i % number1 == 0 && i % number2 == 0)) {
+        while (i % number1 != 0 || i % number2 != 0) {
             i++;
         }
         System.out.println("NOK " + i);
