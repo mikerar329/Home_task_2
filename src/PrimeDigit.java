@@ -3,7 +3,6 @@ import java.util.Scanner;
 
 public class PrimeDigit {
     public static void main(String args[]) {
-        int temp;
         int i = 2;
         boolean isPrime = true;
         Scanner scan = new Scanner(System.in);
@@ -11,18 +10,14 @@ public class PrimeDigit {
 
         int num = scan.nextInt();
 
-        while (isPrime && i <= num / 2) {
-            temp = num % i;
-            if (temp == 0) {
+        while (isPrime && i < (num / 2 + 1)) {
+
+            if (num % i == 0) {
                 isPrime = false;
             }
             i++;
         }
+        System.out.println(num + (isPrime ? " - is Prime" : " - is'nt Prime"));
 
-        if (isPrime) {
-            System.out.println(num + " - is Prime");
-        } else {
-            System.out.println(num + " - is'nt Prime");
-        }
     }
 }
