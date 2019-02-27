@@ -16,7 +16,7 @@ public class PerfectNumber {
                 sum += i;
             }
         }
-         return  a == sum ?  true : false;
+         return a == sum;
 
         }
     }
